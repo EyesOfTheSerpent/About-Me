@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Om Meg</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="CSS/Main.css">
+    <link rel="icon" href="Images/Mobius Logo V1.png">
+
+    <!-- JavaScript -->
+    <script src="JavaScript/Main.js"></script>
 </head>
 <body>
-    
+    <h1>Hvem er jeg?</h1>
+    <p>Hei, jeg heter André. Jeg er 23 år og bor på (<a href="https://gouldvaran.github.io/About-Me/" target="_new" id="uniqueA">hvem</a> vet hvor)</p>
+    <div class="imageContainer">
+        <div class="theImage"></div>
+    </div>
+    <div id="textContainer">
+        <p id="uniqueP"> Hva er mine hobbyer?
+            <ul>
+                <li>
+                    Høre på <a onclick="toggleDisplay()" id="uniqueA">musikk</a>, i tillegg til å lage litt selv også.
+                </li>
+                <li>
+                    Inkludert liker jeg å spille en del.
+                </li>
+                <li>
+                    I noen tilfeller også en enkel gåtur om kvelden når det er mørkt.
+                </li>
+            </ul>
+        </p>
+    </div>
+    <div id="buttonContainer">
+        <p id="textButton">Om du ønsker å ha det litt gøy kan du endre fargene på denne boksen. Alt du trenger å gjøre er å klikke knappen under. Alle fargene er tilfeldige!</p>
+        <button class="specialButton" onclick="changeColor()">Endre farge på tekstboks</button>
+    </div>
+    <div id="toggleContainer" class="hiddenContainer">
+        <div id="musicContainer">
+            <h3 id="videoh3">Default (8 Graves - Evil)</h3>
+            <div id="videoContainer">
+                <iframe id="theVideo" src="https://www.youtube.com/embed/0vqkvpaDCj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <button class="specialButton" onclick="changeVideo()">Tilfeldig Video</button>
+        </div>
+    </div>
 </body>
 </html>
